@@ -1,2 +1,209 @@
-@import './common';
-@import './example';
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --font-lato: 'Lato', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url(/src/images/city.jpg);
+  font-family: var(--font-lato);
+  background-repeat: no-repeat;
+}
+
+.search-location {
+  display: flex;
+  justify-content: center;
+}
+
+.search-location > .search-city {
+  padding: 14px 24px;
+  display: relative;
+  justify-content: center;
+}
+.search-city {
+  border-radius: 30px;
+  width: 500px;
+  outline: none;
+  border: none;
+  margin-top: 79px;
+}
+
+.search-location .search-btn {
+  height: 20px;
+  margin-top: 90px;
+  position: absolute;
+  margin-left: 495px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.location-icon {
+  display: absolute;
+}
+
+.location-weather {
+  width: 450px;
+  border-radius: 34px 0 0 34px;
+  padding: 29px 0 36px;
+  margin: 92px 0 20px auto;
+  background-color: #102136;
+  align-items: center;
+  text-align: center;
+}
+
+.city-title {
+  color: #767d85;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cloudy-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.temperature-list {
+  color: #fff;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.min-max-temperature {
+  display: flex;
+  justify-content: center;
+}
+
+.min-temperature {
+  border-right: 1px solid #27384a;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.min-item1 {
+  color: #767d85;
+  text-align: center;
+  font-family: var(--font-lato);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.min-item2 {
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.max-item1 {
+  color: #767d85;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.max-item2 {
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.today-btn {
+  display: flex;
+  width: 126px;
+  height: 27px;
+  padding: 0px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: hsla(0, 0%, 100%, 0.5);
+}
+
+.button-section {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-right: 110px;
+  margin-bottom: 65px;
+}
+.days-btn {
+  display: flex;
+  width: 126px;
+  height: 28px;
+  padding: 0px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: hsla(0, 0%, 100%, 0.5);
+}
+
+.days-btn:hover,
+.days-btn:focus,
+.today-btn:hover,
+.today-btn:focus {
+  background-color: #fff;
+}
+
+.is-active {
+  background-color: #fff;
+}
+
+.date {
+  width: 630px;
+  height: 278px;
+  border-radius: 0px 34px 0px 0px;
+  background-color: rgba(16, 33, 54, 0.6);
+  color: #fff;
+  margin-top: 138px;
+}
+
+.date-day {
+  font-weight: 300;
+  font-size: 90px;
+  text-align: center;
+}

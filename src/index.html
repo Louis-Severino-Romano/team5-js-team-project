@@ -3,13 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <h1>Example title</h1>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div>
+      <form class="search-location">
+        <input
+          type="text"
+          name="query"
+          class="search-city"
+          placeholder="Enter the city"
+        />
+        <button type="submit" class="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22">
+            <use href="./images/icons.svg#star"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="location-weather">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="22"
+        class="cloudy-icon"
+      >
+        <use href="./images/icons.svg#cloudy"></use>
+      </svg>
+      <p class="city-title">Kyiv, USA</p>
+
+      <ul class="temperature-location-list">
+        <li class="temperature-list">-3</li>
+        <li class="temperature-item">
+          <ul class="min-max-temperature">
+            <li class="min-temperature">
+              <p class="min-item1">min</p>
+              <p class="min-item2">-2°</p>
+            </li>
+            <li class="max-temperature">
+              <p class="max-item1">max</p>
+              <p class="max-item2">1°</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="button-section">
+      <button class="today-btn is-active">Today</button>
+      <button class="days-btn">5 Days</button>
+    </div>
+
+    <div class="calendar">
+      <div class="date">
+        <div class="date-day">18 <sup>th</sup> Sat</div>
+      </div>
+    </div>
   </body>
 </html>
